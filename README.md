@@ -1,4 +1,4 @@
-# minivue
-webpack+vue+vue-loader最小开发组合
+# minivuex
+webpack+vue+vue-loader+vuex最小开发组合
 
-vue+webpack开发探索ing
+vue+vuex+webpack开发探索ing
