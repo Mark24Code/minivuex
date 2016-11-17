@@ -1,17 +1,14 @@
 <template>
     <div class="app">
-        <h1>Vuex试验</h1>
-        <div>来自App的msg:{{msg}}</div>
-
-        <display></display>
-        <increment></increment>
+        <head_wrapper></head_wrapper>
+        <foot_wrapper></foot_wrapper>
     </div>
 
 </template>
 <script>
     import store from './vuex/store.js';
-    import display from './components/Display.vue';
-    import increment from './components/Increment.vue';
+    import head_wrapper from './components/HeadWrapper.vue';
+    import foot_wrapper from './components/FootWrapper.vue';
     export default{
         data(){
             return {
@@ -19,13 +16,19 @@
             }
         },
         components:{
-            display,
-            increment
+            head_wrapper,
+            foot_wrapper
         },
         store
     }
 </script>
 <style>
+body{
+    margin:0;
+    padding:0;
+    min-height: 500px;
+    position: relative;
+}
 .app{
     width: 100%;
     text-align: center;
